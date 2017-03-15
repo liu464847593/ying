@@ -1,0 +1,237 @@
+{
+  "ret_code": 0,
+  "ret_message": "",
+  "timeout": 30,
+  "data": {
+    "groups": [
+      {
+        "name": "最受关注",
+        "list": [
+          {
+            "movie_id": "3779",
+            "title": "攻壳机动队",
+            "versions": "3D/IMAX3D/中国巨幕",
+            "cover": "http://m.filmfly.cn/up/mv/30/28/232038.jpeg",
+            "short_intro": "寡姐版少佐性感酷炫",
+            "rates": "8.0",
+            "wish_count": "622",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-04-07",
+            "has_video_cover": "0",
+            "bgc": 2
+          },
+          {
+            "movie_id": "3788",
+            "title": "金刚：骷髅岛",
+            "versions": "2D/3D/IMAX3D/中国巨幕",
+            "cover": "http://m.filmfly.cn/up/mv/11/62/333407.jpeg",
+            "short_intro": "景甜联手抖森打神秘怪兽",
+            "rates": "7.5",
+            "wish_count": "595",
+            "release_time_type": "0",
+            "video_file_url": "http://v.filmfly.cn/v/3788/jingang.mp4",
+            "has_fav": "0",
+            "sale_status": "1",
+            "show_info": "2017-03-24",
+            "has_video_cover": "1",
+            "bgc": 2
+          },
+          {
+            "movie_id": "3780",
+            "title": "蓝精灵：寻找神秘村",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/22/64/039370.jpeg",
+            "short_intro": "蓝妹妹领队丛林嗨玩",
+            "rates": "8.0",
+            "wish_count": "589",
+            "reldefease_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-04-21",
+            "has_video_cover": "0",
+            "bgc": 0
+          }
+        ]
+      },
+      {
+        "name": "2017年03月16日",
+        "list": [
+          {
+            "movie_id": "3645",
+            "title": "上海王2",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/48/62/33707.jpeg",
+            "short_intro": "再现黑帮传奇",
+            "rates": "5.0",
+            "wish_count": "114",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-16",
+            "has_video_cover": "0",
+            "bgc": 0
+          }
+        ]
+      },
+      {
+        "name": "2017年03月17日",
+        "list": [
+          {
+            "movie_id": "1622",
+            "title": "美好的意外",
+            "versions": "2D",
+            "cover": "http://m.filmfly.cn/up/mv/27/36/083455.jpeg",
+            "short_intro": "释放温柔 为爱蜕变",
+            "rates": "7.0",
+            "wish_count": "92",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-17",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3647",
+            "title": "走出尘埃",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/27/02/528262.jpeg",
+            "short_intro": "一部献给迷茫中的人的电影",
+            "rates": "6.0",
+            "wish_count": "39",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-17",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3648",
+            "title": "滚出来，凶手",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/28/24/364490.jpeg",
+            "short_intro": "爱情讽刺喜剧",
+            "rates": "5.0",
+            "wish_count": "27",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-17",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3726",
+            "title": "美女与野兽",
+            "versions": "2D/3D/IMAX3D/中国巨幕",
+            "cover": "http://m.filmfly.cn/up/mv/64/71/98029.jpeg",
+            "short_intro": "浪漫经典重现，真爱无惧魔咒",
+            "rates": "10.0",
+            "wish_count": "521",
+            "release_time_type": "0",
+            "video_file_url": "http://v.filmfly.cn/v/3726/meinvyuyeshou.mp4",
+            "has_fav": "0",
+            "sale_status": "1",
+            "show_info": "2017-03-17",
+            "has_video_cover": "1",
+            "bgc": 2
+          },
+          {
+            "movie_id": "3802",
+            "title": "通灵姐妹",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/38/55/785439.jpeg",
+            "short_intro": "通灵换体鬼电影",
+            "rates": "3.0",
+            "wish_count": "17",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-17",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3805",
+            "title": "追击",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/19/38/337044.jpeg",
+            "short_intro": "爱尔兰黑帮电影",
+            "rates": "7.1",
+            "wish_count": "68",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "1",
+            "show_info": "2017-03-17",
+            "has_video_cover": "0",
+            "bgc": 0
+          }
+        ]
+      },
+      {
+        "name": "2017年03月24日",
+        "list": [
+          {
+            "movie_id": "304",
+            "title": "诡宅",
+            "versions": "2D",
+            "cover": "http://m.filmfly.cn/up/mv/24/59/525104.jpeg",
+            "short_intro": "鬼影重重阴魂不散",
+            "rates": "0.0",
+            "wish_count": "9",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-24",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3468",
+            "title": "八月",
+            "versions": "",
+            "cover": "http://m.filmfly.cn/up/mv/29/98/889989.jpeg",
+            "short_intro": "第53届台湾电影金马奖最佳影片",
+            "rates": "8.0",
+            "wish_count": "387",
+            "release_time_type": "0",
+            "video_file_url": "",
+            "has_fav": "0",
+            "sale_status": "0",
+            "show_info": "2017-03-24",
+            "has_video_cover": "0",
+            "bgc": 0
+          },
+          {
+            "movie_id": "3788",
+            "title": "金刚：骷髅岛",
+            "versions": "2D/3D/IMAX3D/中国巨幕",
+            "cover": "http://m.filmfly.cn/up/mv/11/62/333407.jpeg",
+            "short_intro": "景甜联手抖森打神秘怪兽",
+            "rates": "7.5",
+            "wish_count": "595",
+            "release_time_type": "0",
+            "video_file_url": "http://v.filmfly.cn/v/3788/jingang.mp4",
+            "has_fav": "0",
+            "sale_status": "1",
+            "show_info": "2017-03-24",
+            "has_video_cover": "1",
+            "bgc": 2
+          }
+        ]
+      }
+    ]
+  }
+}

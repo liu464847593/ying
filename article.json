@@ -1,0 +1,84 @@
+{
+  "ret_code": 0,
+  "ret_message": "",
+  "timeout": -1,
+  "data": {
+    "groups": [
+      {
+        "id": "711",
+        "title": "第21届香港国际影视展",
+        "icon": "http://m.filmfly.cn/static/api/b02.png",
+        "intro": "今年最强港片+刷脸巨星都在这了！",
+        "created_at": "1489545928",
+        "time": "2017-03-15",
+        "list": [
+          {
+            "id": "1920",
+            "title": "英皇一口气公布8部新片 阿Sa阿娇合体助阵",
+            "cover": "http://m.filmfly.cn/up/block/37/31/234387.jpeg?1489546223"
+          },
+          {
+            "id": "1921",
+            "title": "《春娇救志明》主创齐聚香港电影节 九把刀新片成闭幕片",
+            "cover": "http://m.filmfly.cn/up/block/11/98/477289.jpeg?1489546223"
+          },
+          {
+            "id": "1922",
+            "title": "黑帮片《毒。诫》全阵容亮相香港影展 刘青云穿喇叭裤演古惑仔",
+            "cover": "http://m.filmfly.cn/up/block/81/21/54751.jpeg?1489546223"
+          }
+        ]
+      },
+      {
+        "id": "710",
+        "title": "预告&海报齐发",
+        "icon": "http://m.filmfly.cn/static/api/b02.png",
+        "intro": "《神秘家族》即将于4月21日全国上映",
+        "created_at": "1489462502",
+        "time": "2017-03-14",
+        "list": [
+          {
+            "id": "1919",
+            "title": "《狂兽》发先导预告&海报 张晋吴411樾颠覆对决",
+            "cover": "http://m.filmfly.cn/up/block/10/73/908720.jpeg?1489462700"
+          },
+          {
+            "id": "1918",
+            "title": "《神秘家族》曝先导预告 林依晨惨遭“施暴”",
+            "cover": "http://m.filmfly.cn/up/block/92/31/22534.jpeg?1489462700"
+          },
+          {
+            "id": "1917",
+            "title": "《贪狼》发先导预告&海报 古天乐领衔燃血激战",
+            "cover": "http://m.filmfly.cn/up/block/28/41/718469.jpeg?1489462700"
+          }
+        ]
+      },
+      {
+        "id": "709",
+        "title": "即将上映",
+        "icon": "http://m.filmfly.cn/static/api/b02.png",
+        "intro": "《绑架者》3.31上映",
+        "created_at": "1489386526",
+        "time": "2017-03-13",
+        "list": [
+          {
+            "id": "1911",
+            "title": "徐静蕾新作《绑架者》提档3.31 发布终极海报",
+            "cover": "http://m.filmfly.cn/up/block/34/69/435705.jpeg?1489387223"
+          },
+          {
+            "id": "1912",
+            "title": "《秘果》定档7月7日 陈飞宇欧阳娜娜清新亮相",
+            "cover": "http://m.filmfly.cn/up/block/29/20/082140.jpeg?1489387223"
+          },
+          {
+            "id": "1913",
+            "title": "王晶监制《黑白迷宫》首曝概念海报 有望今年内上映",
+            "cover": "http://m.filmfly.cn/up/block/36/41/432650.jpeg?1489387223"
+          }
+        ]
+      }
+    ]
+  }
+}

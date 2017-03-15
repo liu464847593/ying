@@ -1,0 +1,32 @@
+{
+  "ret_code": 0,
+  "ret_message": "",
+  "timeout": -1,
+  "data": {
+    "list": [
+      {
+        "id": "100",
+        "title": "3月影讯",
+        "ios": "http://m.filmfly.cn/up/banner/ios/90/78/28489.jpeg",
+        "android": "http://m.filmfly.cn/up/banner/android/11/93/213360.jpeg",
+        "page": "web",
+        "param": {
+          "title": "测试标题",
+          "url": "http://zt.filmfly.cn/2017/3yyx/index.php"
+        }
+      },
+      {
+        "id": "71",
+        "title": "2017好莱坞大片前瞻",
+        "ios": "http://m.filmfly.cn/up/banner/ios/38/84/853209.jpeg",
+        "android": "http://m.filmfly.cn/up/banner/android/23/11/086635.jpeg",
+        "page": "web",
+        "param": {
+          "title": "测试标题",
+          "url": "http://b.eqxiu.com/s/NjILDwre?eqrcode=1&from=singlemessage&isappinstalled=0"
+        }
+      }
+    ]
+  }
+}
+
