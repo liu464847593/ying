@@ -34,7 +34,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import { XHeader, ButtonTab, ButtonTabItem, Swiper, SwiperItem, Scroller } from 'vux'
+  import { XHeader, ButtonTab, ButtonTabItem, Swiper, SwiperItem } from 'vux'
 
   export default {
     components: {
@@ -42,8 +42,7 @@
       ButtonTab,
       ButtonTabItem,
       Swiper,
-      SwiperItem,
-      Scroller
+      SwiperItem
     },
     data () {
       return {

@@ -23,6 +23,7 @@ var proxyTable = config.dev.proxyTable
 var app = express()
 var banner = require('../data/banner.json')
 var playing = require('../data/playing.json')
+var cinema = require('../data/cinema.json')
 
 var apiRoutes = express.Router();
 
@@ -38,6 +39,13 @@ apiRoutes.get('/playing', function (req, res) {
 		error: 0,
 		data: playing
 	});
+});
+
+apiRoutes.get('/cinema', function (req, res) {
+  res.json({
+    error: 0,
+    data: cinema
+  });
 });
 app.use('/api', apiRoutes);
 
