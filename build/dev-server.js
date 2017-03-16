@@ -21,13 +21,23 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
-var banner = require('../banner.json')
+var banner = require('../data/banner.json')
+var playing = require('../data/playing.json')
+
 var apiRoutes = express.Router();
+
 apiRoutes.get('/banner', function (req, res) {
   res.json({
     error: 0,
     data: banner
   });
+});
+
+apiRoutes.get('/playing', function (req, res) {
+	res.json({
+		error: 0,
+		data: playing
+	});
 });
 app.use('/api', apiRoutes);
 
