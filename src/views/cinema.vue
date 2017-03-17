@@ -13,10 +13,10 @@
             <li class="movies_box">
               <div class="content">
                 <h2 class="name">{{item.name}}</h2>
-                <p class="description">{{item.addr}}</p>
-                <p class="info">{{item.min_price}}</p>
-                <div class="rates">{{item.rates}}分</div>
-                <div class="status">{{item.distance}}</div>
+                <p class="addr">{{item.addr}}</p>
+                <div class="seat">座</div>
+                <p class="min_price">{{item.min_price}}元起</p>
+                <div class="distance">{{item.distance}}</div>
               </div>
             </li>
           </ul>
@@ -27,7 +27,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import { XHeader, ButtonTab, ButtonTabItem, Swiper, SwiperItem, Scroller } from 'vux'
+  import { XHeader, ButtonTab, ButtonTabItem, Swiper, SwiperItem } from 'vux'
 
   export default {
     components: {
@@ -35,8 +35,7 @@
       ButtonTab,
       ButtonTabItem,
       Swiper,
-      SwiperItem,
-      Scroller
+      SwiperItem
     },
     data () {
       return {
@@ -62,6 +61,52 @@
   }
 </script>
 
-<style>
-
+<style lang="less" rel="stylesheet/less">
+ .cinema_wrapper{
+     position: absolute;
+     top: 220px;
+     bottom: 53px;
+     width: 100%;
+     overflow-y: scroll;
+     .cinema_list{
+         margin: 18px 0 18px 18px;
+         padding-bottom: 10px;
+         border-bottom: 1px solid rgba(7,17,27,0.1);
+         .movies_box{
+             position: relative;
+             .name{
+                 height: 14px;
+                 line-height: 14px;
+                 font-size: 14px;
+                 margin: 2px 0 10px 0;
+             }
+             .addr{
+                 font-size: 10px;
+                 color: #93999f;
+                 margin-bottom: 5px;
+             }
+             .min_price{
+                 display: inline-block;
+                 font-size: 10px;
+                 color: #93999f;
+             }
+             .seat{
+                 height: 14px;
+                 line-height: 14px;
+                 font-size: 14px;
+                 border: 1px solid deepskyblue ;
+                 display: inline-block;
+                 padding: 2px;
+                 border-radius: 2px;
+                 color: deepskyblue;
+             }
+             .distance{
+                 position: absolute;
+                 right: 18px;
+                 top: 24px;
+                 color: #93999f;
+             }
+         }
+     }
+ }
 </style>

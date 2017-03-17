@@ -24,6 +24,7 @@ var app = express()
 var banner = require('../data/banner.json')
 var playing = require('../data/playing.json')
 var cinema = require('../data/cinema.json')
+var event = require('../data/event.json')
 
 var apiRoutes = express.Router();
 
@@ -45,6 +46,13 @@ apiRoutes.get('/cinema', function (req, res) {
   res.json({
     error: 0,
     data: cinema
+  });
+});
+
+apiRoutes.get('/event', function (req, res) {
+  res.json({
+    error: 0,
+    data: event
   });
 });
 app.use('/api', apiRoutes);
