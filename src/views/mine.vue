@@ -38,18 +38,24 @@
     </group>
     <group>
       <cell title="关注的电影" is-link>
-        <img src="../assets/img/account_left.png" style="display:block;margin-right: 10px" slot="icon">
+        <img src="../assets/img/movie_small.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
       <cell title="参与的活动" is-link>
-        <img src="../assets/img/order.png" style="display:block;margin-right: 10px" slot="icon">
+        <img src="../assets/img/CLOCK.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
       <cell title="绑定社交帐号" is-link>
-        <img src="../assets/img/comments.png" style="display:block;margin-right: 10px" slot="icon">
+        <img src="../assets/img/heart.png" style="display:block;margin-right: 10px" slot="icon">
+        <img src="../assets/img/wechat.png">
+        <img src="../assets/img/xinlang.png">
+        <img src="../assets/img/qq.png">
       </cell>
     </group>
     <group>
-      <cell title="客服电话" is-link>
-        <img src="../assets/img/account_left.png" style="display:block;margin-right: 10px" slot="icon">
+      <cell title="客服电话" is-link >
+        <img src="../assets/img/icon_telephone.png" style="display:block;margin-right: 10px" slot="icon">
+        <div slot="value">
+          <span style="color: black">400-966-5002</span>
+        </div>
       </cell>
     </group>
   </div>
