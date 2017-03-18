@@ -2,33 +2,62 @@
   <div>
     <x-header :left-options="{showBack: false}"><a slot="left">深圳</a></x-header>
     <button-tab>
-      <button-tab-item selected>热映</button-tab-item>
-      <button-tab-item>待映</button-tab-item>
+      <button-tab-item selected @click.native="hot_show()">热映</button-tab-item>
+      <button-tab-item @click.native="upcoming_show()">待映</button-tab-item>
     </button-tab>
-    <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
-      <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list" :key="index">
-        <img :src="item.android">
-      </swiper-item>
-    </swiper>
-    <div class="moives_wrapper">
-      <ul>
-        <li v-for="(item, index) in playing_list" class="movies_list">
-          <ul>
-            <li class="movies_box">
-              <div class="icon">
-                <img :src="item.cover" width="60" height="80">
-              </div>
-              <div class="content">
-                <h2 class="name">{{item.title}}</h2>
-                <p class="description">{{item.short_intro}}</p>
-                <p class="info">{{item.show_info}}</p>
-                <div class="rates">{{item.rates}}分</div>
-                <div class="status">{{item.sale_status}}</div>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <div class="hot_wrapper" v-show="hotShow">
+      <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
+        <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list" :key="index">
+          <img :src="item.android">
+        </swiper-item>
+      </swiper>
+      <div class="moives_wrapper">
+        <ul>
+          <li v-for="(item, index) in playing_list" class="movies_list">
+            <ul>
+              <li class="movies_box">
+                <div class="icon">
+                  <img :src="item.cover" width="60" height="80">
+                </div>
+                <div class="content">
+                  <h2 class="name">{{item.title}}</h2>
+                  <p class="description">{{item.short_intro}}</p>
+                  <p class="info">{{item.show_info}}</p>
+                  <div class="rates">{{item.rates}}分</div>
+                  <div class="status">{{item.sale_status}}</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hot_wrapper" v-show="!hotShow">
+      <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
+        <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list">
+          <img :src="item.list.cover">
+        </swiper-item>
+      </swiper>
+      <div class="moives_wrapper">
+        <ul>
+          <li v-for="(item, index) in playing_list" class="movies_list">
+            <ul>
+              <li class="movies_box">
+                <div class="icon">
+                  <img :src="item.cover" width="60" height="80">
+                </div>
+                <div class="content">
+                  <h2 class="name">{{item.title}}</h2>
+                  <p class="description">{{item.short_intro}}</p>
+                  <p class="info">{{item.show_info}}</p>
+                  <div class="rates">{{item.rates}}分</div>
+                  <div class="status">{{item.sale_status}}</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -47,24 +76,30 @@
     data () {
       return {
         banner_list: [],
-        playing_list: []
+        playing_list: [],
+        hotShow: true
       }
     },
     methods: {
-      onScroll (pos) {
-        console.log('on scroll', pos)
-        this.scrollTop = pos.top
+      hot_show () {
+        this.hotShow = true
+      },
+      upcoming_show () {
+        var _this = this
+        this.hotShow = false
+        this.$http.get('/api/upcoming').then(function (res) {
+          console.log(res)
+          _this.playing_list = res.data.data.data.groups
+        })
       }
     },
     created () {
       var _this = this
       this.$http.get('/api/banner').then(function (res) {
         _this.banner_list = res.data.data.data.list
-        console.log(_this.banner_list)
       })
       this.$http.get('/api/playing').then(function (res) {
         _this.playing_list = res.data.data.data.list
-        console.log(_this.playing_list)
       })
     }
   }
