@@ -39,25 +39,25 @@
         </swiper-item>
       </swiper>
       <div class="moives_wrapper">
-        <ul>
-          <li v-for="(item, index) in playing_list" class="movies_list">
-            <h2>{{item.name}}</h2>
-            <ul>
-              <li class="movies_box">
-                <div class="icon">
-                  <img :src="item" width="60" height="80">
-                </div>
-                <div class="content">
-                  <h2 class="name">{{item.title}}</h2>
-                  <p class="description">{{item.short_intro}}</p>
-                  <p class="info">{{item.show_info}}</p>
-                  <div class="rates">{{item.rates}}分</div>
-                  <div class="status">{{item.sale_status}}</div>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <!--<ul>-->
+          <!--<li v-for="(item, index) in playing_list" class="movies_list">-->
+            <!--<h2>{{item.name}}</h2>-->
+            <!--<ul>-->
+              <!--<li class="movies_box">-->
+                <!--<div class="icon">-->
+                  <!--<img :src="item" width="60" height="80">-->
+                <!--</div>-->
+                <!--<div class="content">-->
+                  <!--<h2 class="name">{{item.title}}</h2>-->
+                  <!--<p class="description">{{item.short_intro}}</p>-->
+                  <!--<p class="info">{{item.show_info}}</p>-->
+                  <!--<div class="rates">{{item.rates}}分</div>-->
+                  <!--<div class="status">{{item.sale_status}}</div>-->
+                <!--</div>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</li>-->
+        <!--</ul>-->
       </div>
     </div>
   </div>
