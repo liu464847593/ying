@@ -5,7 +5,7 @@
       <button-tab-item selected @click.native="hot_show()">热映</button-tab-item>
       <button-tab-item @click.native="upcoming_show()">待映</button-tab-item>
     </button-tab>
-    <div class="hot_wrapper" v-show="hotShow">
+    <div class="hot_wrapper" v-if="hotShow">
       <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
         <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list" :key="index">
           <img :src="item.android">
@@ -32,19 +32,20 @@
         </ul>
       </div>
     </div>
-    <div class="hot_wrapper" v-show="!hotShow">
+    <div class="hot_wrapper" v-if="!hotShow">
       <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
-        <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list">
-          <img :src="item.list.cover">
+        <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list" :key="index">
+          <img :src="item.android">
         </swiper-item>
       </swiper>
       <div class="moives_wrapper">
         <ul>
           <li v-for="(item, index) in playing_list" class="movies_list">
+            <h2>{{item.name}}</h2>
             <ul>
               <li class="movies_box">
                 <div class="icon">
-                  <img :src="item.cover" width="60" height="80">
+                  <img :src="item" width="60" height="80">
                 </div>
                 <div class="content">
                   <h2 class="name">{{item.title}}</h2>
@@ -83,13 +84,22 @@
     methods: {
       hot_show () {
         this.hotShow = true
+        var _this = this
+        this.$http.get('/api/playing').then(function (res) {
+          _this.playing_list = res.data.data.data.list
+        })
       },
       upcoming_show () {
         var _this = this
         this.hotShow = false
+        console.log(!this.hotShow)
         this.$http.get('/api/upcoming').then(function (res) {
           console.log(res)
           _this.playing_list = res.data.data.data.groups
+        })
+        this.$http.get('/api/banner').then(function (res) {
+          _this.banner_list = res.data.data.data.list
+          console.log(_this.banner_list)
         })
       }
     },
