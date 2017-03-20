@@ -43,9 +43,9 @@
           <li v-for="(item, index) in playing_list" class="movies_list">
             <h2>{{item.name}}</h2>
             <ul>
-              <li class="movies_box">
+              <li class="movies_box" v-for="(item, index) in item.list">
                 <div class="icon">
-                  <img :src="item" width="60" height="80">
+                  <img :src="item.cover" width="60" height="80">
                 </div>
                 <div class="content">
                   <h2 class="name">{{item.title}}</h2>
@@ -92,14 +92,11 @@
       upcoming_show () {
         var _this = this
         this.hotShow = false
-        console.log(!this.hotShow)
         this.$http.get('/api/upcoming').then(function (res) {
-          console.log(res)
           _this.playing_list = res.data.data.data.groups
         })
         this.$http.get('/api/banner').then(function (res) {
           _this.banner_list = res.data.data.data.list
-          console.log(_this.banner_list)
         })
       }
     },
