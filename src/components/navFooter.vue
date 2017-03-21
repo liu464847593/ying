@@ -1,21 +1,23 @@
 <template>
   <tabbar>
-    <tabbar-item selected link="/">
-      <img slot="icon" src="../assets/img/movie.png" >
-      <img slot="icon-active" src="../assets/img/movie_blue.png">
+    <tabbar-item selected link="/" @click.native="index=0">
+      <img slot="icon" src="../assets/img/movie.png" v-if="index!=0">
+      <img slot="icon" src="../assets/img/movie_blue.png" v-if="index==0">
       <span slot="label">电影</span>
     </tabbar-item>
-    <tabbar-item link="/Cinema">
+    <tabbar-item link="/Cinema" @click.native="index=1">
       <img slot="icon" src="../assets/img/cinema.png">
+      <!--<img slot="icon" src="../assets/img/cinema.png" v-if="index==1">-->
       <span slot="label">影院</span>
     </tabbar-item>
-    <tabbar-item selected link="/Find">
-      <img slot="icon" src="../assets/img/find.png">
+    <tabbar-item link="/Find" @click.native="index=3">
+      <img slot="icon" src="../assets/img/find.png" v-if="index!=3">
+      <img slot="icon" src="../assets/img/find_blue.png"  v-if="index==3">
       <span slot="label">发现</span>
     </tabbar-item>
-    <tabbar-item link="/Mine">
+    <tabbar-item link="/Mine" @click.native="index=4">
       <img slot="icon" src="../assets/img/mine.png">
-      <span slot="label">我的</span>
+      <span slot="label" @click.native="index=1">我的</span>
     </tabbar-item>
   </tabbar>
 </template>
@@ -27,10 +29,17 @@
     components: {
       Tabbar,
       TabbarItem
+    },
+    data () {
+      return {
+        index: 0
+      }
     }
   }
 </script>
 
 <style>
-
+  .weui-bar__item_on .weui-tabbar__label{
+    color: #1296db!important;
+  }
 </style>

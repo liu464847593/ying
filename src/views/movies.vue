@@ -32,7 +32,7 @@
         </ul>
       </div>
     </div>
-    <div class="hot_wrapper" v-if="!hotShow">
+    <div class="hot_wrapper upcoming_list" v-if="!hotShow">
       <swiper :aspect-ratio="320/720" style="width:100%" auto loop :interval=2000 dots-position="center">
         <swiper-item class="swiper-demo-img" v-for="(item, index) in banner_list" :key="index">
           <img :src="item.android">
@@ -50,9 +50,9 @@
                 <div class="content">
                   <h2 class="name">{{item.title}}</h2>
                   <p class="description">{{item.short_intro}}</p>
-                  <p class="info">{{item.show_info}}</p>
-                  <div class="rates">{{item.rates}}分</div>
-                  <div class="status">{{item.sale_status}}</div>
+                  <p class="info">{{item.show_info}}上映</p>
+                  <div class="rates">{{item.wish_count}}人想看</div>
+                  <div class="status">{{item.sale_status == 0 ? '想看' : '预售'}}</div>
                 </div>
               </li>
             </ul>
@@ -137,7 +137,7 @@
   }
   .moives_wrapper{
       position: absolute;
-      top: 220px;
+      top: 206px;
       bottom: 53px;
       width: 100%;
       overflow-y: scroll;
@@ -185,4 +185,25 @@
       }
   }
 
+  .upcoming_list {
+    .movies_list {
+      margin: 0;
+      padding-bottom: 0;
+      & > h2 {
+        height: 18px;
+        line-height: 18px;
+        font-size: 14px;
+        text-indent: 18px;
+        background: #93999f;
+      }
+      .movies_box{
+        margin: 9px 18px 18px 18px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(7,17,27,0.1);
+        .status{
+          bottom: 18px;
+        }
+      }
+    }
+  }
 </style>
