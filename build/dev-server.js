@@ -26,6 +26,7 @@ var playing = require('../data/playing.json')
 var cinema = require('../data/cinema.json')
 var event = require('../data/event.json')
 var upcoming = require('../data/upcoming.json')
+var article = require('../data/article.json')
 
 var apiRoutes = express.Router();
 
@@ -60,6 +61,12 @@ apiRoutes.get('/upcoming', function (req, res) {
   res.json({
     error: 0,
     data: upcoming
+  });
+});
+apiRoutes.get('/article', function (req, res) {
+  res.json({
+    error: 0,
+    data: article
   });
 });
 app.use('/api', apiRoutes);
