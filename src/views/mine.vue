@@ -2,7 +2,7 @@
   <div>
     <x-header :left-options="{showBack: false}">我的</x-header>
     <group>
-      <cell title="立即登录" is-link>
+      <cell title="立即登录" is-link link="/Login">
         <img src="../assets/img/account.png" width="32" style="display:block;margin-right: 10px" slot="icon">
       </cell>
     </group>
@@ -26,24 +26,24 @@
       </div>
     </card>
     <group>
-      <cell title="我的账户" is-link>
+      <cell title="我的账户" is-link link="/Login">
         <img src="../assets/img/account_left.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
-      <cell title="我的订单" is-link>
+      <cell title="我的订单" is-link link="/Login">
         <img src="../assets/img/order.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
-      <cell title="我的评论" is-link>
+      <cell title="我的评论" is-link link="/Login">
         <img src="../assets/img/comments.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
     </group>
     <group>
-      <cell title="关注的电影" is-link>
+      <cell title="关注的电影" is-link link="/Login">
         <img src="../assets/img/movie_small.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
-      <cell title="参与的活动" is-link>
+      <cell title="参与的活动" is-link link="/Login">
         <img src="../assets/img/CLOCK.png" style="display:block;margin-right: 10px" slot="icon">
       </cell>
-      <cell title="绑定社交帐号" is-link>
+      <cell title="绑定社交帐号" is-link link="/Login">
         <img src="../assets/img/heart.png" style="display:block;margin-right: 10px" slot="icon">
         <img src="../assets/img/wechat.png">
         <img src="../assets/img/xinlang.png">
@@ -51,7 +51,7 @@
       </cell>
     </group>
     <group>
-      <cell title="客服电话" is-link >
+      <cell title="客服电话" is-link>
         <img src="../assets/img/icon_telephone.png" style="display:block;margin-right: 10px" slot="icon">
         <div slot="value">
           <span style="color: black">400-966-5002</span>

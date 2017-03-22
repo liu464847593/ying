@@ -8,6 +8,7 @@ import Home from './views/movies'
 import Cinema from './views/cinema'
 import Find from './views/find'
 import Mine from './views/mine'
+import Login from './components/login'
 import { AjaxPlugin } from 'vux'
 
 Vue.use(AjaxPlugin)
@@ -25,6 +26,9 @@ const routes = [{
 }, {
   path: '/Mine',
   component: Mine
+}, {
+  path: '/Login',
+  component: Login
 }]
 
 const router = new VueRouter({
