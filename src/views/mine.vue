@@ -51,30 +51,37 @@
       </cell>
     </group>
     <group>
-      <cell title="客服电话" is-link>
+      <cell title="客服电话" is-link @click.native="showTel=true">
         <img src="../assets/img/icon_telephone.png" style="display:block;margin-right: 10px" slot="icon">
         <div slot="value">
           <span style="color: black">400-966-5002</span>
         </div>
       </cell>
     </group>
+    <actionsheet v-model="showTel" :menus="menus1" show-cancel></actionsheet>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import { Cell, Group, XHeader, Card } from 'vux'
+  import { Cell, Group, XHeader, Card, Actionsheet } from 'vux'
 
   export default {
     components: {
       Group,
       Cell,
       XHeader,
-      Card
+      Card,
+      Actionsheet
+    },
+    data () {
+      return {
+        showTel: false,
+        menus1: {
+          menu1: '400 - 966 - 5002'
+        }
+      }
     },
     methods: {
-      onClick () {
-        console.log('on click')
-      }
     }
   }
 </script>
