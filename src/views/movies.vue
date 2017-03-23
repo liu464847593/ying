@@ -131,6 +131,7 @@
   }
   .swiper-demo-img img {
     width: 100%;
+    height: 180px;
   }
   .vux-icon-dot.active{
     background: #35495e!important;
