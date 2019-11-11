@@ -39,8 +39,15 @@
   }
 </script>
 
-<style>
-  .weui-bar__item_on .weui-tabbar__label{
-    color: #1296db!important;
+<style lang="less" scoped>
+  .weui-tabbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label span{
+    color: #1296db;
   }
 </style>

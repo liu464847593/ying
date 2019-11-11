@@ -131,15 +131,11 @@
   }
   .swiper-demo-img img {
     width: 100%;
-    height: 180px;
   }
   .vux-icon-dot.active{
     background: #35495e!important;
   }
   .moives_wrapper{
-      position: absolute;
-      top: 206px;
-      bottom: 53px;
       width: 100%;
       overflow-y: scroll;
       .movies_list{

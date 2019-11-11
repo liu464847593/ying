@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <nav-Footer></nav-Footer>
+    <div class="pageWrapper">
+      <router-view></router-view>
+      <nav-Footer></nav-Footer>
+    </div>
   </div>
 </template>
 
@@ -16,9 +18,16 @@
 </script>
 
 <style lang="less">
-@import '../src/assets/reset.less';
+  @import '../src/assets/reset.less';
 
-body {
-  background-color: #fbf9fe;
-}
+  body {
+    overflow-x: hidden;
+    background-color: #fbf9fe;
+  }
+
+  .pageWrapper {
+    margin: 0 auto;
+    max-width: 750px;
+    padding-bottom: 53px;
+  }
 </style>
